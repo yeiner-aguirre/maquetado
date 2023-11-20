@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tarjeta {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70%; 
+    height: 300px;
+    text-align: center;
+}
+
+.titulo-tarjeta {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.fila-secciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.cuadro-seccion {
+    flex: 0 0 calc(30% - 20px);
+    height: 160px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 8px;
+    border: 2px solid #a82727; 
+}
+
+.titulo-cuadro {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.seccion1 {
+    background-color: #fff;
+    border: 2px solid cadetblue;
+}
+
+.seccion2 {
+    background-color: #fff;
+    border: 2px solid gray;
+}
+
+.seccion3 {
+    background-color: #fff;
+    border: 2px solid rgb(179, 41, 41); 
+}
+.seccion1 h2, .seccion1 p {
+   color: cadetblue;
+}
+
+.seccion2 h2, .seccion2 p {
+     color: gray
+}
+
+.seccion3 h2, .seccion3 p {
+    color:rgb(179, 41, 41); 
+}
+
+@media screen and (max-width: 768px) {
+    .cuadro-seccion {
+        flex: 0 0 calc(100% - 20px);
+    }
+}
